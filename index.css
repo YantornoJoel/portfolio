@@ -322,7 +322,7 @@ min-width: 100px;
 } */
 
 #contact-h2{
-  margin-top: -100px;
+  margin-top: -300px;
 /*   margin-left: -290px; */
   width: 100%;
   max-width: 280px;
@@ -352,7 +352,7 @@ min-width: 100px;
 
 
 #hr{
-  margin-top: -40px;
+  margin-top: -10px;
   margin-bottom: 40px;
   border: 1.2px solid green;
   max-width: 200px;
