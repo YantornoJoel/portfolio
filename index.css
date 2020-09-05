@@ -1,0 +1,404 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	background: #1D1D1F;
+	color: red;
+	font-family: 'Montserrat', sans-serif;
+	min-height: 100vh;
+
+	align-items: center;
+}
+
+.contenedor {
+	max-width: 1200px;
+	width: 90%;
+	margin: auto;
+  
+}
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+.contenido-principal {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.contenido-principal__imagen {
+	vertical-align: top;
+	margin-right: 20px;
+	width: 50%;
+	max-width: 550px;
+}
+
+.contenido-principal__contenedor {
+	width: 50%;
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+	font-size: 28px;
+}
+
+.contenido-principal__resumen {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	color: #CFCFCF;
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+	position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: -40px;
+}
+
+.carousel__siguiente {
+	right: -40px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+}
+.carousel__elemento:hover{
+  transform:scale(1.0);
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #8C8989;
+	opacity: 0.2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+  background: black;
+	opacity: 2;
+}
+
+.carousel__indicadores .glider-dot.active {
+  background: black;
+	opacity: 2;
+}
+
+ @media screen and (max-width: 358px){
+  #contact-email{
+    display: inline-flex;
+     transform: scale(1.0);
+       min-width: 32cm; 
+     margin-right: 130px; 
+  }
+  #contact-email i{
+    margin-right: 7px;
+    margin-top: 5px;
+  }
+}
+
+ 
+ @media screen and (max-width: 383px){
+  #contact-email{
+   
+    font-size: 14px;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 385px){
+  #contact-email{
+min-width: 100px;
+    margin-left: -1px; 
+   }
+} 
+
+  @media screen and (max-width: 450px){
+  #hr{
+  display: none; 
+  }
+}
+
+@media screen and (max-width: 605px){
+  .carousel__anterior{
+    display: none;
+  }
+  .carousel__siguiente{
+    display: none;
+  }
+}
+ 
+ @media screen and (max-width: 780px){ 
+   .contact-links{ 
+         float: none; 
+        width: 100%;
+        margin-right: -500px;
+        padding: 0px;
+        line-height: 43px;
+} 
+ #contact{
+  background-image: 10%;
+   }  
+   }  
+
+@media screen and(max-width: 780px){
+  .contact-links{
+    font-size: 200px;
+    background: red;
+    color: blue;
+    transform: scale(0.8)
+  }
+}
+ 
+@media screen and (max-width: 800px) {
+
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
+
+
+
+
+.fondo{
+  background: red;
+}
+
+
+
+
+
+.welcome-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #0DC49D;
+  background-color: radial-gradient(center, ellipse cover, rgba(150, 150, 150, 1) 0%, rgba(89, 89, 89, 1) 50%);
+ text-align:center;
+  
+}
+.welcome-section{
+  width:100%;
+
+}
+.welcome-section h1{
+  font-weight:100;
+  font-size:50px;
+  color: white;
+  padding:0px 0px 5px 0px;
+}
+.welcome-section h2{
+  font-weight:100;
+  font-size:30px;
+  color: white;
+  text-transform:uppercase;
+}
+
+
+.seccion-projects{
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+
+
+.element-list{
+  border: 4px solid #8C8989;
+  border-radius: 20px;
+   filter: brightness(50%);
+  transition: 0.8s;
+    transform: scale(0.8);
+  
+}
+
+.element-list:hover{
+   filter: brightness(100%);
+ 
+}
+ 
+
+.element-image{
+  height: 200px;
+   border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  
+}
+
+#etiqueta:hover{
+  border-top: 15px solid #2E2D2D;
+
+  color: white;
+  text-decoration: none;
+}
+
+
+.element-title{
+  margin-bottom: -2px;
+   background: #8C8989;
+  color: white;
+  text-decoration: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  
+  
+}
+
+
+
+
+
+#contact {
+ background: #181d23 url("https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true") no-repeat right;  
+  clip-path: polygon(0 0, 20% 100px, 100% 0, 100% 100%, 0 100%);
+  color: #fafafa;
+  min-height: 100vh; 
+  width: 100%;
+  padding: 5rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 175px;
+/*   margin: 100px 0 140px; */
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+/* 
+.contact-links{
+  background: red;
+  margin-top: 200px;
+    display: block;
+  justify-content: space-between;
+} */
+
+#contact-h2{
+  margin-top: -300px;
+/*   margin-left: -290px; */
+  width: 100%;
+  max-width: 280px;
+  
+/*   background: #181d23  */
+}
+
+.contact-links {
+  
+  margin-left: -500px;
+  margin-top: 400px;
+  width: 100%;
+  max-width: 280px;
+  
+
+}
+.contact-links a, .contact-links a:hover{
+  color: white; 
+}
+
+#contact-p{
+  color: white;
+  
+  background: #181d23;
+
+}
+
+
+#hr{
+  margin-top: -40px;
+  margin-bottom: 40px;
+  border: 1.2px solid green;
+  max-width: 200px;
+  margin-left: 42px;
+}
+
+
+.link-me:hover{
+  transform:scale(1.25);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
